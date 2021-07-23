@@ -1,0 +1,10 @@
+1 core () of drsa_countryRisk_2014_sim30.isf (all attributes 10, active condition attributes 9, decision d, objects 36); Fri May 15 13:40:15 GFT 2020
+
+{at2,at4,at9}
+
+4 reducts (all) of drsa_countryRisk_2014_sim30.isf (all attributes 10, active condition attributes 9, decision d, objects 36); Fri May 15 13:40:15 GFT 2020
+
+{at2,at4,at6,at7,at9}
+{at1,at2,at4,at6,at9}
+{at2,at4,at5,at7,at9}
+{at1,at2,at4,at5,at9}

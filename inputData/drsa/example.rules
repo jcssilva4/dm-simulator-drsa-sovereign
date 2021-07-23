@@ -1,0 +1,112 @@
+[FILEINFO]
+Program: jrs
+Algorithm: VC-DOMLEM
+DataFileDirectory: C:\Users\julio\Google Drive\1stRev DRSA_4OR\data\inputData\drsa
+DataFileName: example.isf
+Objects: 5
+Decision: d
+Duration: 8 [ms]
+Comment: Rules generated with VC-DOMLEM algorithm
+
+[PARAMETERS]
+RulesFormat: INFORMATION_TABLE_PARETO
+ConsistencyLevel: 1.0
+Classes: 1, 2, 3
+
+[ATTRIBUTES]
++ at1: (continuous), gain
++ at2: (continuous), gain
++ at3: (continuous), gain
++ d: [1, 2, 3], gain, decision
+
+decision: d
+
+[PREFERENCES]
+at1: gain
+at2: gain
+at3: gain
+d: gain
+
+[RULES]
+#Certain at least rules
+1: (at3 >= 2.0) => (d >= 3) |CERTAIN, AT_LEAST, 3|
+2: (at1 >= 1.0) => (d >= 2) |CERTAIN, AT_LEAST, 2|
+#Certain at most rules
+3: (at1 <= 0.0) => (d <= 1) |CERTAIN, AT_MOST, 1|
+4: (at3 <= 1.0) => (d <= 2) |CERTAIN, AT_MOST, 2|
+
+[RULESINFO]
+#Certain at least rules
+1: (at3 >= 2.0) => (d >= 3) |CERTAIN, AT_LEAST, 3|
+LearningPositiveExamples: 1, 2
+Support: 2
+SupportingExamples: 1, 2
+Strength: 0.4
+Confidence: 1.0
+CoverageFactor: 1.0
+Coverage: 2
+CoveredExamples: 1, 2
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 1.0
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+2: (at1 >= 1.0) => (d >= 2) |CERTAIN, AT_LEAST, 2|
+LearningPositiveExamples: 1, 2, 3, 4
+Support: 4
+SupportingExamples: 1, 2, 3, 4
+Strength: 0.8
+Confidence: 1.0
+CoverageFactor: 1.0
+Coverage: 4
+CoveredExamples: 1, 2, 3, 4
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 1.0
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+#Certain at most rules
+3: (at1 <= 0.0) => (d <= 1) |CERTAIN, AT_MOST, 1|
+LearningPositiveExamples: 5
+Support: 1
+SupportingExamples: 5
+Strength: 0.2
+Confidence: 1.0
+CoverageFactor: 1.0
+Coverage: 1
+CoveredExamples: 5
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 1.0
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+4: (at3 <= 1.0) => (d <= 2) |CERTAIN, AT_MOST, 2|
+LearningPositiveExamples: 3, 4, 5
+Support: 3
+SupportingExamples: 3, 4, 5
+Strength: 0.6
+Confidence: 1.0
+CoverageFactor: 1.0
+Coverage: 3
+CoveredExamples: 3, 4, 5
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 1.0
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+

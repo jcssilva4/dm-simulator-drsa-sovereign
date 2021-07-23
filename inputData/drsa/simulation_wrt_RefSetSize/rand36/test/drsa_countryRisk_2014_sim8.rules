@@ -1,0 +1,371 @@
+[FILEINFO]
+Program: jrs
+Algorithm: VC-DOMLEM
+DataFileDirectory: C:\Users\julio\Google Drive\1stRev DRSA_4OR\data\inputData\drsa\simulation_wrt_RefSetSize\rand36\test
+DataFileName: drsa_countryRisk_2014_sim8.isf
+Objects: 50
+Decision: d
+Duration: 56 [ms]
+Comment: Rules generated with VC-DOMLEM algorithm
+
+[PARAMETERS]
+RulesFormat: INFORMATION_TABLE_PARETO
+ConsistencyLevel: 1.0
+Classes: 3, 2, 1
+
+[ATTRIBUTES]
++ at1: (continuous), gain
++ at2: (continuous), gain
++ at3: (continuous), gain
++ at4: (continuous), gain
++ at5: (continuous), gain
++ at6: (continuous), gain
++ at7: (continuous), gain
++ at8: (continuous), cost
++ at9: (continuous), cost
++ d: [1, 2, 3], cost, decision
+
+decision: d
+
+[PREFERENCES]
+at1: gain
+at2: gain
+at3: gain
+at4: gain
+at5: gain
+at6: gain
+at7: gain
+at8: cost
+at9: cost
+d: cost
+
+[RULES]
+#Certain at least rules
+1: (at1 >= 15842.94080521801) & (at6 >= 1.59510372912884E10) => (d <= 1) |CERTAIN, AT_LEAST, 1|
+2: (at1 >= 10970.1232849014) & (at8 <= 4.6125) => (d <= 1) |CERTAIN, AT_LEAST, 1|
+3: (at8 <= 5.935) => (d <= 2) |CERTAIN, AT_LEAST, 2|
+4: (at6 >= 4.88276408456875E10) => (d <= 2) |CERTAIN, AT_LEAST, 2|
+5: (at3 >= 42.16728076638825) => (d <= 2) |CERTAIN, AT_LEAST, 2|
+6: (at4 >= 1.62093900682707E10) => (d <= 2) |CERTAIN, AT_LEAST, 2|
+7: (at8 <= 8.28916666666667) & (at9 <= -0.4661456540828975) => (d <= 2) |CERTAIN, AT_LEAST, 2|
+#Certain at most rules
+8: (at3 <= 15.19446637291207) => (d >= 3) |CERTAIN, AT_MOST, 3|
+9: (at7 <= 2720.0) => (d >= 3) |CERTAIN, AT_MOST, 3|
+10: (at5 <= 1.258212260419213E10) => (d >= 3) |CERTAIN, AT_MOST, 3|
+11: (at8 >= 19.1333333333333) => (d >= 3) |CERTAIN, AT_MOST, 3|
+12: (at4 <= -3.7721234393159E9) => (d >= 3) |CERTAIN, AT_MOST, 3|
+13: (at3 <= 18.25124303400052) & (at8 >= 9.24666666666667) => (d >= 3) |CERTAIN, AT_MOST, 3|
+14: (at3 <= 19.02767036665985) & (at8 >= 15.895) => (d >= 3) |CERTAIN, AT_MOST, 3|
+15: (at1 <= 10725.18331660358) => (d >= 2) |CERTAIN, AT_MOST, 2|
+16: (at3 <= 19.02767036665985) => (d >= 2) |CERTAIN, AT_MOST, 2|
+17: (at6 <= 5.52771844019013E9) => (d >= 2) |CERTAIN, AT_MOST, 2|
+
+[RULESINFO]
+#Certain at least rules
+1: (at1 >= 15842.94080521801) & (at6 >= 1.59510372912884E10) => (d <= 1) |CERTAIN, AT_LEAST, 1|
+LearningPositiveExamples: 9, 19, 20, 28, 29, 34, 38, 43, 50
+Support: 8
+SupportingExamples: 9, 19, 28, 29, 34, 38, 43, 50
+Strength: 0.16
+Confidence: 1.0
+CoverageFactor: 0.8888888888888888
+Coverage: 8
+CoveredExamples: 9, 19, 28, 29, 34, 38, 43, 50
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.8677248677248677
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+2: (at1 >= 10970.1232849014) & (at8 <= 4.6125) => (d <= 1) |CERTAIN, AT_LEAST, 1|
+LearningPositiveExamples: 9, 19, 20, 28, 29, 34, 38, 43, 50
+Support: 3
+SupportingExamples: 20, 43, 50
+Strength: 0.06
+Confidence: 1.0
+CoverageFactor: 0.3333333333333333
+Coverage: 3
+CoveredExamples: 20, 43, 50
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.2907801418439716
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+3: (at8 <= 5.935) => (d <= 2) |CERTAIN, AT_LEAST, 2|
+LearningPositiveExamples: 4, 8, 9, 11, 15, 19, 20, 22, 23, 28, 29, 32, 34, 35, 38, 42, 43, 50
+Support: 12
+SupportingExamples: 9, 11, 15, 20, 28, 29, 32, 34, 38, 42, 43, 50
+Strength: 0.24
+Confidence: 1.0
+CoverageFactor: 0.6666666666666666
+Coverage: 12
+CoveredExamples: 9, 11, 15, 20, 28, 29, 32, 34, 38, 42, 43, 50
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.5614035087719298
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+4: (at6 >= 4.88276408456875E10) => (d <= 2) |CERTAIN, AT_LEAST, 2|
+LearningPositiveExamples: 4, 8, 9, 11, 15, 19, 20, 22, 23, 28, 29, 32, 34, 35, 38, 42, 43, 50
+Support: 8
+SupportingExamples: 4, 15, 20, 32, 35, 38, 42, 43
+Strength: 0.16
+Confidence: 1.0
+CoverageFactor: 0.4444444444444444
+Coverage: 8
+CoveredExamples: 4, 15, 20, 32, 35, 38, 42, 43
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.3386243386243386
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+5: (at3 >= 42.16728076638825) => (d <= 2) |CERTAIN, AT_LEAST, 2|
+LearningPositiveExamples: 4, 8, 9, 11, 15, 19, 20, 22, 23, 28, 29, 32, 34, 35, 38, 42, 43, 50
+Support: 5
+SupportingExamples: 8, 9, 32, 34, 50
+Strength: 0.1
+Confidence: 1.0
+CoverageFactor: 0.2777777777777778
+Coverage: 5
+CoveredExamples: 8, 9, 32, 34, 50
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.19753086419753085
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+6: (at4 >= 1.62093900682707E10) => (d <= 2) |CERTAIN, AT_LEAST, 2|
+LearningPositiveExamples: 4, 8, 9, 11, 15, 19, 20, 22, 23, 28, 29, 32, 34, 35, 38, 42, 43, 50
+Support: 4
+SupportingExamples: 15, 19, 23, 38
+Strength: 0.08
+Confidence: 1.0
+CoverageFactor: 0.2222222222222222
+Coverage: 4
+CoveredExamples: 15, 19, 23, 38
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.15458937198067632
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+7: (at8 <= 8.28916666666667) & (at9 <= -0.4661456540828975) => (d <= 2) |CERTAIN, AT_LEAST, 2|
+LearningPositiveExamples: 4, 8, 9, 11, 15, 19, 20, 22, 23, 28, 29, 32, 34, 35, 38, 42, 43, 50
+Support: 2
+SupportingExamples: 9, 22
+Strength: 0.04
+Confidence: 1.0
+CoverageFactor: 0.1111111111111111
+Coverage: 2
+CoveredExamples: 9, 22
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.07407407407407407
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+#Certain at most rules
+8: (at3 <= 15.19446637291207) => (d >= 3) |CERTAIN, AT_MOST, 3|
+LearningPositiveExamples: 1, 2, 3, 5, 6, 7, 10, 12, 13, 14, 16, 17, 18, 21, 24, 25, 26, 27, 30, 31, 33, 36, 37, 39, 40, 41, 44, 45, 46, 47, 48, 49
+Support: 15
+SupportingExamples: 1, 6, 7, 12, 14, 21, 26, 33, 37, 39, 44, 45, 46, 47, 48
+Strength: 0.3
+Confidence: 1.0
+CoverageFactor: 0.46875
+Coverage: 15
+CoveredExamples: 1, 6, 7, 12, 14, 21, 26, 33, 37, 39, 44, 45, 46, 47, 48
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.24107142857142858
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+9: (at7 <= 2720.0) => (d >= 3) |CERTAIN, AT_MOST, 3|
+LearningPositiveExamples: 1, 2, 3, 5, 6, 7, 10, 12, 13, 14, 16, 17, 18, 21, 24, 25, 26, 27, 30, 31, 33, 36, 37, 39, 40, 41, 44, 45, 46, 47, 48, 49
+Support: 10
+SupportingExamples: 5, 10, 16, 21, 24, 27, 30, 36, 39, 47
+Strength: 0.2
+Confidence: 1.0
+CoverageFactor: 0.3125
+Coverage: 10
+CoveredExamples: 5, 10, 16, 21, 24, 27, 30, 36, 39, 47
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.140625
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+10: (at5 <= 1.258212260419213E10) => (d >= 3) |CERTAIN, AT_MOST, 3|
+LearningPositiveExamples: 1, 2, 3, 5, 6, 7, 10, 12, 13, 14, 16, 17, 18, 21, 24, 25, 26, 27, 30, 31, 33, 36, 37, 39, 40, 41, 44, 45, 46, 47, 48, 49
+Support: 8
+SupportingExamples: 7, 14, 17, 18, 25, 27, 36, 48
+Strength: 0.16
+Confidence: 1.0
+CoverageFactor: 0.25
+Coverage: 8
+CoveredExamples: 7, 14, 17, 18, 25, 27, 36, 48
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.10714285714285714
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+11: (at8 >= 19.1333333333333) => (d >= 3) |CERTAIN, AT_MOST, 3|
+LearningPositiveExamples: 1, 2, 3, 5, 6, 7, 10, 12, 13, 14, 16, 17, 18, 21, 24, 25, 26, 27, 30, 31, 33, 36, 37, 39, 40, 41, 44, 45, 46, 47, 48, 49
+Support: 3
+SupportingExamples: 13, 21, 39
+Strength: 0.06
+Confidence: 1.0
+CoverageFactor: 0.09375
+Coverage: 3
+CoveredExamples: 13, 21, 39
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.03590425531914894
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+12: (at4 <= -3.7721234393159E9) => (d >= 3) |CERTAIN, AT_MOST, 3|
+LearningPositiveExamples: 1, 2, 3, 5, 6, 7, 10, 12, 13, 14, 16, 17, 18, 21, 24, 25, 26, 27, 30, 31, 33, 36, 37, 39, 40, 41, 44, 45, 46, 47, 48, 49
+Support: 2
+SupportingExamples: 2, 41
+Strength: 0.04
+Confidence: 1.0
+CoverageFactor: 0.0625
+Coverage: 2
+CoveredExamples: 2, 41
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.0234375
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+13: (at3 <= 18.25124303400052) & (at8 >= 9.24666666666667) => (d >= 3) |CERTAIN, AT_MOST, 3|
+LearningPositiveExamples: 1, 2, 3, 5, 6, 7, 10, 12, 13, 14, 16, 17, 18, 21, 24, 25, 26, 27, 30, 31, 33, 36, 37, 39, 40, 41, 44, 45, 46, 47, 48, 49
+Support: 17
+SupportingExamples: 3, 6, 7, 14, 21, 24, 26, 31, 33, 36, 37, 39, 40, 44, 46, 47, 48
+Strength: 0.34
+Confidence: 1.0
+CoverageFactor: 0.53125
+Coverage: 17
+CoveredExamples: 3, 6, 7, 14, 21, 24, 26, 31, 33, 36, 37, 39, 40, 44, 46, 47, 48
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.2897727272727273
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+14: (at3 <= 19.02767036665985) & (at8 >= 15.895) => (d >= 3) |CERTAIN, AT_MOST, 3|
+LearningPositiveExamples: 1, 2, 3, 5, 6, 7, 10, 12, 13, 14, 16, 17, 18, 21, 24, 25, 26, 27, 30, 31, 33, 36, 37, 39, 40, 41, 44, 45, 46, 47, 48, 49
+Support: 10
+SupportingExamples: 6, 7, 21, 24, 36, 39, 44, 46, 47, 49
+Strength: 0.2
+Confidence: 1.0
+CoverageFactor: 0.3125
+Coverage: 10
+CoveredExamples: 6, 7, 21, 24, 36, 39, 44, 46, 47, 49
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.140625
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+15: (at1 <= 10725.18331660358) => (d >= 2) |CERTAIN, AT_MOST, 2|
+LearningPositiveExamples: 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 35, 36, 37, 39, 40, 41, 42, 44, 45, 46, 47, 48, 49
+Support: 36
+SupportingExamples: 1, 2, 3, 4, 5, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 35, 36, 37, 39, 42, 44, 45, 46, 47, 48
+Strength: 0.72
+Confidence: 1.0
+CoverageFactor: 0.8780487804878049
+Coverage: 36
+CoveredExamples: 1, 2, 3, 4, 5, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 35, 36, 37, 39, 42, 44, 45, 46, 47, 48
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.5644599303135889
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+16: (at3 <= 19.02767036665985) => (d >= 2) |CERTAIN, AT_MOST, 2|
+LearningPositiveExamples: 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 35, 36, 37, 39, 40, 41, 42, 44, 45, 46, 47, 48, 49
+Support: 23
+SupportingExamples: 1, 3, 4, 6, 7, 12, 14, 21, 23, 24, 26, 31, 33, 36, 37, 39, 40, 44, 45, 46, 47, 48, 49
+Strength: 0.46
+Confidence: 1.0
+CoverageFactor: 0.5609756097560976
+Coverage: 23
+CoveredExamples: 1, 3, 4, 6, 7, 12, 14, 21, 23, 24, 26, 31, 33, 36, 37, 39, 40, 44, 45, 46, 47, 48, 49
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.18699186991869918
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+
+17: (at6 <= 5.52771844019013E9) => (d >= 2) |CERTAIN, AT_MOST, 2|
+LearningPositiveExamples: 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 35, 36, 37, 39, 40, 41, 42, 44, 45, 46, 47, 48, 49
+Support: 17
+SupportingExamples: 3, 5, 7, 11, 12, 14, 17, 18, 21, 22, 25, 27, 31, 36, 39, 44, 48
+Strength: 0.34
+Confidence: 1.0
+CoverageFactor: 0.4146341463414634
+Coverage: 17
+CoveredExamples: 3, 5, 7, 11, 12, 14, 17, 18, 21, 22, 25, 27, 31, 36, 39, 44, 48
+NegativeCoverage: 0
+NegativeCoveredExamples: 
+InconsistencyMeasure: 0.0
+EpsilonPrimMeasure: 0.0
+f-ConfirmationMeasure: 1.0
+A-ConfirmationMeasure: 0.1130820399113082
+Z-ConfirmationMeasure: 1.0
+l-ConfirmationMeasure: Infinity
+

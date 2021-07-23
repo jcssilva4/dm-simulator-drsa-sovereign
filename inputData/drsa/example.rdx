@@ -1,0 +1,9 @@
+1 core () of example.isf (all attributes 4, active condition attributes 3, decision d, objects 5); Fri May 15 16:14:27 GFT 2020
+
+{}
+
+3 reducts (all) of example.isf (all attributes 4, active condition attributes 3, decision d, objects 5); Fri May 15 16:14:27 GFT 2020
+
+{at2,at3}
+{at1,at3}
+{at1,at2}
